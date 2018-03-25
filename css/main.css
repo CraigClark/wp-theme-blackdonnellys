@@ -365,6 +365,9 @@ footer {
 .bd-fill {
   fill: #8e0000; }
 
+.home .post h1:first-of-type {
+  display: none; }
+
 /* -- Media Queries ---*/
 /** Medium  **/
 @media screen and (min-width: 35rem) and (max-width: 68rem) {

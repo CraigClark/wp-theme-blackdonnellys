@@ -362,4 +362,9 @@ footer {
   fill: $logo-text;
 }
 
+.home .post h1:first-of-type {
+  display: none;
+  
+}
+
 @import "queries";
