@@ -1,0 +1,93 @@
+<?php get_header(); ?>
+	
+	<!-- HEADER INCLUDE STOPS HERE -->
+	
+	<!-- BEGIN MAIN TEMPLATE HERE -->
+	
+
+	<div class="wrapper">
+
+		<section class="content">
+			
+			<div class="grid-group clearfix">
+
+				<div class="grid-item grid-2 leftcol">
+				
+				
+				
+					
+					<?php
+// WP_Query arguments
+$args = array (
+	'category_name' => 'sketch',
+	'pagination' => false,
+	'posts_per_page' => '4',
+	'order' => 'DESC',
+	'orderby' => 'date',
+);
+
+// The Query
+$myquery = new WP_Query( $args );
+// The Loop
+if ( $myquery->have_posts() ) {
+	while ( $myquery->have_posts() ) {
+		$myquery->the_post();
+		// do something
+?>
+
+
+	<?php the_content(); ?>
+
+	<?php
+	}
+} else {
+	// no posts found
+	echo "<p>Please add Posts to Category: <em>Featured</em></p>";
+}
+
+// IMPORTANT TO NOT MESS THINGS UP Restore original Post Data
+wp_reset_postdata();
+?>
+					
+					
+				<hr>
+					
+					<!-- HERE WE BEGIN OUR CONTENT LOOP -->
+					<!-- THE LOOP -->
+		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+					
+					<blockquote>
+						<p><a href="<?php the_permalink(); ?>"><?php the_title();?></a></p>
+					</blockquote>
+					
+					<h2><?php the_date(); ?> by <?php the_author(); ?></h2>
+					
+					<?php the_content(); ?>
+					
+				<?php endwhile; else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				<?php endif; ?>
+       
+	<!-- END THE LOOP -->
+	
+				</div> <!-- end left column container -->
+
+				<div class="grid-item rightcol">
+					<?php get_sidebar(  ); ?>
+				</div><!-- /grid-item rightcol -->
+				
+			</div><!-- end column container-->
+
+			</section> <!-- end content section -->
+	</div><!-- END WRAPPER -->
+
+<!-- MAIN TEMPLATE AREA ENDS HERE -->
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<?php get_footer(  ); ?>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE
+
+WHEW! YOU MADE IT! -->

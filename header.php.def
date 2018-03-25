@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<title><?php wp_title ( '|', true,'right' ); ?> <?php bloginfo('name'); ?></title>
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> 
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/main.css">
+
+	<!-- DO NOT MOVE OR DELETE THE NEXT LINE: -->
+	<?php wp_head(); ?>
+	</head>
+<body <?php body_class(); ?>>
+
+<div class="wrapper">
+	
+	<header>
+		<nav><?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?></nav>
+	</header>
+</div> <!--/wrapper-->
+
+<div class="branding">
+	<div class="wrapper">
+		<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1> 
+		<blockquote><?php bloginfo('description'); ?></blockquote>
+	</div>
+</div>
+
+
+
+
+<!-- END HEADER -->

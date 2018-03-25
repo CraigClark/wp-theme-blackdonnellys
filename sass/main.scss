@@ -1,0 +1,334 @@
+/* 
+Colours from _Variables.scss  
+$ColorBackground: #15303d; 
+Changing $colorBackground will change the tones and values of everything.
+*/
+
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "form";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $ColorBackground;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $ColorHeadings;
+}
+
+h3 {
+	margin-top: 1rem;
+}
+
+
+
+a {
+  text-decoration: none;
+  //color: $ColorInlineLink;
+  color: mix(black, $ColorText, 10%);
+  font-weight: 700;
+  transition: all 750ms ease;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    //color: $ColorInlineLinkHover;
+  }
+}
+
+p, li {
+  color: $ColorText;
+  	a {
+	  	color: $ColorInlineLink;
+	  	font-weight: 400;
+	  	&:hover, &:focus {
+		  	color: $ColorInlineLinkHover;
+	  	}
+	  	
+  	}
+}
+
+header {
+	h1 {
+		color: $ColorDarker;
+		padding: 1rem;
+		text-align: center;
+		line-height: .8em;
+			a {
+			color: $ColorDarker;
+				&:hover {
+					text-decoration: none;
+				}
+				span {
+					color: mix(white,$ColorDarker, 25%);
+				}
+		}
+	}
+}
+
+
+/*-- NAVIGATION - -*/
+nav {
+  margin-top: 1em;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    @include clearfix;
+
+    li {
+      width: 100%;
+      margin-bottom: 1px;
+
+      a {
+        display: block;
+        background-color: $ColorMenuBackground;
+        color: mix(white, $ColorMenuBackground, 70%);
+        height: $thumb;
+        line-height: $thumb;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          color: mix(black, $ColorMenuBackground, 70%);
+          background-color: mix(white, $ColorMenuBackground, 80%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  font-family: $bodyFont;
+  font-size: 1.32rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid $ColorDarker;
+  background-color: $ColorDarker;
+  color: $ColorLighter;
+  transition: all 750ms ease;
+  outline: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $ColorLighter;
+    color: $ColorDarker;
+  }
+}
+
+/*-- .content-box styles entire content  --*/
+.content-box {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  overflow: auto;
+  border-radius: $rem * 0.25;
+  padding: 1rem 1.5rem 0;
+
+  * {
+    border-radius: $rem * 0.25;
+    
+  }
+  
+  /*ul li.list.last {
+    background-color: #000;
+}
+	  
+	  */
+	  div:last-of-type {
+		  
+			  border-bottom: 0px solid;
+		  
+	  }
+
+  
+	.post {
+
+		  p {
+		  	text-align: left;
+		  	
+  		}
+  		border-bottom: 1px solid $ColorLighter;
+  		margin-bottom: 1.15rem;
+  		padding-bottom: 1rem;
+
+  
+	}
+	
+	ul {
+	
+	li {
+		list-style: disc;
+		list-style-position: inside;
+		text-align: left;
+	}
+}
+    
+  
+}
+
+.single-post {
+	.content-box {
+		.post {
+			border-bottom: 0px;
+		}
+	}
+}
+
+
+.wrapper {
+  max-width: $maxSiteWidth;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.top-decoration {
+background-color: $ColorLighter;
+padding-bottom: 1em;
+	
+}
+.branding {
+  margin: 0 auto 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: $ColorBackground;
+  background-image: url(../images/transparent-texture.png);
+  border-top: 2px $ColorDarker solid;
+  border-bottom: 2px $ColorDarker solid;
+  
+  img {
+	  display: block;
+	  margin: 0 auto;
+  }
+
+  blockquote {
+    p {
+      color: $ColorDarker;
+      font-weight: 700;
+      font-size: 1.15rem;
+      line-height: 1.6rem;
+    }
+  }
+}
+
+.full-width {
+  // use for things that go 100% the width of the site
+  background-color: $ColorDarker;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+
+
+/*-- Styling footer --*/
+footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+
+  //overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $ColorLighter;
+
+  a {
+    color: $ColorLighter;
+  }
+
+  p {
+    color: $ColorLighter;
+  }
+
+  .social-links {
+    flex-grow: 1;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        font-size: 1.5rem;
+
+        a {
+          color: mix(white, $ColorLighter, 70%);
+          margin: .5rem;
+
+          &:hover {
+            color: mix(black, $ColorLighter, 30%);
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright-notice {
+    flex-grow: 1;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  address {
+    flex-grow: 1;
+    padding: .5rem;
+
+    a {
+      font-weight: 300;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.alert {
+  p {
+    color: $ColorAlert;
+    margin: 1rem auto;
+    font-size: $rem * 1.12;
+  }
+}
+
+.page-navigation {
+	border-top: 1px solid $ColorBorder;
+	clear: both;
+}
+
+.postmetadata {
+	clear: both;
+	@include clearfix;
+}
+
+
+
+@import "queries";

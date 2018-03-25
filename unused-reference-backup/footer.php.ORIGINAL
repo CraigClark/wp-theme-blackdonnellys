@@ -1,0 +1,11 @@
+<!-- BEGIN FOOTER -->
+	<footer>
+		Copyright &copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>. All rights reserved. 
+	</footer>
+
+</div> <!-- END WRAPPER-->
+
+<!-- DO NOT MOVE OR DELETE THE NEXT LINE : -->
+<?php wp_footer(); ?>
+</body>
+</html>

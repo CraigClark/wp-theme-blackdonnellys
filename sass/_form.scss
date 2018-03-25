@@ -1,0 +1,55 @@
+form {
+margin: 2.5rem .5rem .5rem;
+  padding: 2rem .5rem .5rem;
+border: 1px solid $ColorBorder;
+  
+  
+  
+  
+  
+          position: relative;
+
+  
+  
+  legend {
+    width: 70%;
+    text-align: center;
+    border: 1px solid $ColorBorder;
+background-color: $ColorLighter;
+    position: absolute;
+    height: 3rem;
+    padding: .5rem;
+    margin: -3.5rem 15% 1rem 15%;
+  }
+
+  .form-box {
+    margin-bottom: .5rem;
+
+    select {
+      height: $thumb;
+      font-size: 1rem;
+      display: block;
+      border: 1px solid $ColorBorder;
+      width: 100%;
+    }
+
+    input {
+      display: block;
+      height: $thumb;
+      font-size: 1rem;
+      color: $ColorLighter;
+      background-color: $ColorDarker;
+      overflow: auto;
+      transition: all 750ms ease;
+      outline: 0;
+      width: 100%;
+      border: 1px solid $ColorDarker;
+
+      &:hover {
+        color: $ColorDarker;
+        background-color: $ColorLighter;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,469 @@
+@import https://fonts.googleapis.com/css?family=Bitter:400,700|Raleway:300,400,700;
+
+/* 
+Colours from _Variables.scss 
+$ColorBackground: #15303d; 
+Changing $colorBackground will change the tones and values of everything.
+*/
+html {
+	font-family:"Raleway",sans-serif;
+	font-size:13.5pt;
+}
+
+p,.p {
+	margin-top:1rem;
+	line-height:1.6rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Bitter",serif;
+	line-height:1.6rem;
+}
+
+h1 {
+	font-size:23.625pt;
+}
+
+h2 {
+	font-size:20.08125pt;
+}
+
+h3 {
+	font-size:17.0690625pt;
+}
+
+h4 {
+	font-size:14.508703125pt;
+}
+
+h5 {
+	font-size:12.3323976563pt;
+}
+
+h6 {
+	font-size:10.4825380078pt;
+}
+
+strong,.strong {
+	font-weight:700;
+}
+
+em,.em,abbr {
+	font-style:italic;
+}
+
+form {
+	margin:2.5rem .5rem .5rem;
+	padding:2rem .5rem .5rem;
+	border:1px solid #b9c1c5;
+	position:relative;
+}
+
+form legend {
+	width:70%;
+	text-align:center;
+	border:1px solid #b9c1c5;
+	background-color:#e8eaec;
+	position:absolute;
+	height:3rem;
+	padding:.5rem;
+	margin:-3.5rem 15% 1rem;
+}
+
+form .form-box {
+	margin-bottom:.5rem;
+}
+
+form .form-box select {
+	height:50px;
+	font-size:1rem;
+	display:block;
+	border:1px solid #b9c1c5;
+	width:100%;
+}
+
+form .form-box input {
+	display:block;
+	height:50px;
+	font-size:1rem;
+	color:#e8eaec;
+	background-color:#112631;
+	overflow:auto;
+	transition:all 750ms ease;
+	outline:0;
+	width:100%;
+	border:1px solid #112631;
+}
+
+form .form-box input:hover {
+	color:#112631;
+	background-color:#e8eaec;
+	cursor:pointer;
+}
+
+html {
+	box-sizing:border-box;
+}
+
+*,:before,:after {
+	box-sizing:inherit;
+}
+
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#15303d;
+}
+
+img {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#112631;
+}
+
+p {
+	color:#0b181f;
+}
+
+a {
+	text-decoration:none;
+	color:#0a161c;
+	font-weight:700;
+	transition:all 750ms ease;
+}
+
+a:hover,a:focus {
+	text-decoration:underline;
+}
+
+/*-- NAVIGATION - -*/
+nav {
+	margin-top:1em;
+}
+
+nav ul {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+}
+
+nav ul .clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+
+nav ul li {
+	width:100%;
+	margin-bottom:1px;
+}
+
+nav ul li a {
+	display:block;
+	background-color:#112631;
+	color:#b8bec1;
+	height:50px;
+	line-height:50px;
+	text-decoration:none;
+	text-align:center;
+}
+
+nav ul li a:hover {
+	color:#050b0f;
+	background-color:#cfd4d6;
+	text-decoration:none;
+}
+
+button {
+	width:100%;
+	padding:1rem;
+	font-weight:700;
+	font-family:"Raleway",sans-serif;
+	font-size:1.32rem;
+	border-radius:1rem;
+	margin-bottom:1rem;
+	border:3px solid #112631;
+	background-color:#112631;
+	color:#e8eaec;
+	transition:all 750ms ease;
+	outline:0;
+}
+
+button:hover {
+	cursor:pointer;
+	background-color:#e8eaec;
+	color:#112631;
+}
+
+/*-- .content-box styles entire content --*/
+.content-box {
+	display:block;
+	text-align:center;
+	background-color:#e8eaec;
+	overflow:auto;
+	border-radius:3.75pt;
+	padding:0 .5rem;
+}
+
+.content-box * {
+	border-radius:3.75pt;
+}
+
+.wrapper {
+	max-width:100rem;
+	margin:0 auto;
+	padding:0 1rem;
+}
+
+.branding {
+	margin:1rem auto;
+	text-align:center;
+	background-image:url(../images/transparent-texture.png);
+	border-top:2px #112631 solid;
+	border-bottom:2px #112631 solid;
+}
+
+.branding blockquote p {
+	color:#e8eaec;
+	padding:2rem;
+}
+
+.full-width {
+	background-color:#112631;
+	margin:0;
+	padding:0;
+	overflow:auto;
+	width:100%;
+}
+
+/*-- Styling footer --*/
+footer {
+	margin-top:1rem;
+	padding:1rem 0;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:#e8eaec;
+}
+
+footer a {
+	color:#e8eaec;
+}
+
+footer p {
+	color:#e8eaec;
+}
+
+footer .social-links {
+	flex-grow:1;
+}
+
+footer .social-links ul {
+	list-style:none;
+}
+
+footer .social-links ul li {
+	display:inline-block;
+	font-size:1.5rem;
+}
+
+footer .social-links ul li a {
+	color:#f8f9f9;
+	margin:.5rem;
+}
+
+footer .social-links ul li a:hover {
+	color:#a2a4a5;
+}
+
+footer .social-links ul li a span {
+	display:none;
+}
+
+footer .copyright-notice {
+	flex-grow:1;
+	padding:.5rem;
+	text-align:center;
+}
+
+footer address {
+	flex-grow:1;
+	padding:.5rem;
+}
+
+footer address a {
+	font-weight:300;
+}
+
+footer address a:hover,footer address a:active {
+	text-decoration:underline;
+}
+
+.alert p {
+	color:#761C19;
+	margin:1rem auto;
+	font-size:16.8pt;
+}
+
+/*** specific to this site **/
+.content-block {
+	border:1px solid #b9c1c5;
+	margin:.5rem;
+	padding:1.25rem;
+	background-color:#fff;
+}
+
+.content-block p {
+	text-align:left;
+}
+
+.content-block img {
+	display:block;
+	border:1px solid #e8eaec;
+}
+
+/* -- Media Queries ---*/
+@media screen and (min-width: 40rem) {
+	p {
+		font-size:16.2pt;
+	}
+	
+	h1 {
+		font-size:38.22525pt;
+	}
+	
+	h2 {
+		margin-left:1rem;
+	}
+	
+	nav {
+		max-width:60%;
+	}
+	
+	nav ul {
+		flex-direction:row;
+	}
+	
+	nav ul li {
+		width:calc(33.33% - 5px);
+		margin-bottom:0;
+		overflow:auto;
+	}
+	
+	nav ul li a {
+		font-size:21.843pt;
+		height:2rem;
+		line-height:2rem;
+		text-align:center;
+	}
+	
+	.content-box {
+		text-align:left;
+	}
+	
+	.branding h1 {
+		margin:.75em 0;
+		text-align:left;
+	}
+	
+	footer {
+		flex-direction:row;
+		align-items:flex-start;
+		width:24em;
+	}
+	
+	footer .social-links {
+		text-align:left;
+	}
+	
+	footer address {
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+	
+	footer .p {
+		margin-top:0;
+	}
+	
+	footer .copyright-notice {
+		text-align:left;
+	}
+	
+	footer .copyright-notice p {
+		margin:0;
+	}
+	
+	form legend {
+		width:30%;
+		margin:-3.5rem 0 1rem;
+	}
+	
+	form:nth-child(3) {
+		margin:0 .75rem;
+	}
+	
+	form .end {
+		display:inline-block;
+		width:calc(33.3333%);
+	}
+	
+	form .middle {
+		display:inline-block;
+		width:calc(33.3333%);
+		padding:0 .5rem;
+	}
+	
+	form .form-box input {
+		width:30%;
+	}
+	
+	blockquote p {
+		text-align:left;
+	}
+	
+	blockquote p em {
+		padding-left:2rem;
+	}
+	
+	.content-list .content-block {
+		overflow:auto;
+		width:calc(50% - 1em);
+		float:left;
+		margin-bottom:1rem;
+	}
+	
+	.content-list .content-block p {
+		margin-top:0;
+	}
+	
+	.content-list .content-block img {
+		border:0 solid;
+		display:inline-block;
+		width:25%;
+		min-width:10rem;
+		float:left;
+		padding:0 1rem 0 0;
+	}
+	
+	.alert p {
+		margin-left:.5rem;
+	}
+}

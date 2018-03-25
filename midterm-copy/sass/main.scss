@@ -1,0 +1,243 @@
+/* 
+Colours from _Variables.scss 
+$ColorBackground: #15303d; 
+Changing $colorBackground will change the tones and values of everything.
+*/
+
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "form";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@include clearfix;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $ColorBackground;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $ColorHeadings;
+}
+
+p {
+  color: $ColorText;
+}
+
+a {
+  text-decoration: none;
+  color: mix(black, $ColorText, 10%);
+  font-weight: 700;
+  transition: all 750ms ease;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+/*-- NAVIGATION - -*/
+nav {
+  margin-top: 1em;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    @include clearfix;
+
+    li {
+      width: 100%;
+      margin-bottom: 1px;
+
+      a {
+        display: block;
+        background-color: $ColorMenuBackground;
+        color: mix(white, $ColorMenuBackground, 70%);
+        height: $thumb;
+        line-height: $thumb;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          color: mix(black, $ColorMenuBackground, 70%);
+          background-color: mix(white, $ColorMenuBackground, 80%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  font-family: $bodyFont;
+  font-size: 1.32rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid $ColorDarker;
+  background-color: $ColorDarker;
+  color: $ColorLighter;
+  transition: all 750ms ease;
+  outline: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $ColorLighter;
+    color: $ColorDarker;
+  }
+}
+
+/*-- .content-box styles entire content --*/
+.content-box {
+  display: block;
+  text-align: center;
+  background-color: $ColorLighter;
+  overflow: auto;
+  border-radius: $rem * 0.25;
+  padding: 0 .5rem;
+
+  * {
+    border-radius: $rem * 0.25;
+  }
+}
+
+.wrapper {
+  max-width: $maxSiteWidth;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.branding {
+  margin: 1rem auto;
+  text-align: center;
+  background-image: url(../images/transparent-texture.png);
+  border-top: 2px $ColorDarker solid;
+  border-bottom: 2px $ColorDarker solid;
+
+  blockquote {
+    p {
+      color: $ColorLighter;
+      padding: 2rem;
+    }
+  }
+}
+
+.full-width {
+  // use for things that go 100% the width of the site
+  background-color: $ColorDarker;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+/*-- Styling footer --*/
+footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+
+  //overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $ColorLighter;
+
+  a {
+    color: $ColorLighter;
+  }
+
+  p {
+    color: $ColorLighter;
+  }
+
+  .social-links {
+    flex-grow: 1;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        font-size: 1.5rem;
+
+        a {
+          color: mix(white, $ColorLighter, 70%);
+          margin: .5rem;
+
+          &:hover {
+            color: mix(black, $ColorLighter, 30%);
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright-notice {
+    flex-grow: 1;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  address {
+    flex-grow: 1;
+    padding: .5rem;
+
+    a {
+      font-weight: 300;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.alert {
+  p {
+    color: $ColorAlert;
+    margin: 1rem auto;
+    font-size: $rem * 1.12;
+  }
+}
+
+/*** specific to this site **/
+.content-block {
+  border: 1px solid $ColorBorder;
+  margin: .5rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+
+  p {
+    text-align: left;
+  }
+
+  img {
+    display: block;
+    border: 1px solid $ColorLighter;
+  }
+}
+
+@import "queries";

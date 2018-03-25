@@ -1,0 +1,38 @@
+1903
+At Kittyhawk North Carolina Orville and Wilbur Wright had the first powered flight. Their plane use a gas engine. The Wright brothers invention has had a huge impact on travel and commerce. Air travel and cargo is not a multi-billion dollar industry.
+wright-brothers.png
+
+1914
+The Panama canal was completed. The Panama canal, to this day is considered a major feat of human engineering. Panama was chosen as the site to connect the Pacific to the Atlantic because it is the narrowest part of North America. Over 25 000 workers died during construction. The Canal reduced the trip from ocean to ocean by almost 1300 KM.
+panama-canal.png
+
+1927
+The first television broadcast, made by Philo Farnsworth, was an image of a dollar sign. His intent was to encourage investors. The impact of television on our society cannot be underestimated. Moving images and sound could be broadcast to a limitless number of people simultaneously. 
+television.png
+
+1945
+Oppenheimer and his team exploded the first atomic bomb in New Mexico. The United states dropped two atomic bombs on Japan later the same year killing over 100 000 people. This was followed by an arms race during the cold war between the US and USSR.
+atomic-bomb.png
+
+1957
+There was a time when polio crippled thousands of people around the world every year. Dr. Albert Sabin invented a polio vaccine that has since save millions of people rom the disease. It works by administering a small dose of polio to activate the immune system.
+vaccine.jpg
+
+1972 
+The first video game, Pong was released in 1972. The game's inventor, Noland Bushnell, went on to found the company Atari. Video games have become a huge industry surpassing the Hollywood movie industry in value. No longer used strictly for entertainment, video games are use for education and simulation purposes.
+pong.png
+
+1988
+Microsoft launched the first commercial operating system to use a Graphic User Interface (GUI). Apple sued Microsoft stating that Microsoft stole the idea from pirated Apple software, however Apple lost in court. The significance of the GUI cannot be underestimated. It made computer technology accessible to billions of people.
+gui.png
+
+
+2007
+It is difficult to say what the first smartphone was. There is no clear definition of what a smart phone is, people have been using PDAs for over three decades. There is no doubt though that the launch of the first iPhone has had a huge impact on mobile computing. This constant and immediate access to digital networks has changed how we work, play and learn.
+iphone.png
+
+
+///MEDIA QUERY TO INSERT AL THIS LOOKS LIKE
+
+INSERT INTO `history` (`history_id`, `history_content`, `history_image`, `history_date`) VALUES (NULL, 'At Kittyhawk North Carolina Orville and Wilbur Wright had the first powered flight. Their plane use a gas engine. The Wright brothers invention has had a huge impact on travel and commerce. Air travel and cargo is not a multi-billion dollar industry.', 'wright-brothers.png', '1903'), (NULL, 'The Panama canal was completed. The Panama canal, to this day is considered a major feat of human engineering. Panama was chosen as the site to connect the Pacific to the Atlantic because it is the narrowest part of North America. Over 25 000 workers died during construction. The Canal reduced the trip from ocean to ocean by almost 1300 KM.', 'panama-canal.png', '1914'), (NULL, 'The first television broadcast, made by Philo Farnsworth, was an image of a dollar sign. His intent was to encourage investors. The impact of television on our society cannot be underestimated. Moving images and sound could be broadcast to a limitless number of people simultaneously.', 'television.png', '1927'), (NULL, 'Oppenheimer and his team exploded the first atomic bomb in New Mexico. The United states dropped two atomic bombs on Japan later the same year killing over 100 000 people. This was followed by an arms race during the cold war between the US and USSR.', 'atomic-bomb.png', '1945'), (NULL, 'There was a time when polio crippled thousands of people around the world every year. Dr. Albert Sabin invented a polio vaccine that has since save millions of people rom the disease. It works by administering a small dose of polio to activate the immune system.', 'vaccine.jpg', '1957'), (NULL, 'The first video game, Pong was released in 1972. The game\'s inventor, Noland Bushnell, went on to found the company Atari. Video games have become a huge industry surpassing the Hollywood movie industry in value. No longer used strictly for entertainment, video games are use for education and simulation purposes.', 'pong.png', '1972'), (NULL, 'Microsoft launched the first commercial operating system to use a Graphic User Interface (GUI). Apple sued Microsoft stating that Microsoft stole the idea from pirated Apple software, however Apple lost in court. The significance of the GUI cannot be underestimated. It made computer technology accessible to billions of people.', 'gui.png', '1988'), (NULL, 'It is difficult to say what the first smartphone was. There is no clear definition of what a smart phone is, people have been using PDAs for over three decades. There is no doubt though that the launch of the first iPhone has had a huge impact on mobile computing. This constant and immediate access to digital networks has changed how we work, play and learn.', 'iphone.png', '2007');
+

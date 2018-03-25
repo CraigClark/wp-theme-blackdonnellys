@@ -1,0 +1,72 @@
+<?php get_header(); ?>
+	
+	<!-- HEADER INCLUDE STOPS HERE -->
+	
+	<!-- BEGIN MAIN TEMPLATE HERE -->
+	
+	<div class="feature-wrapper">
+		<div class="feature">
+			<aside class="feature-item">
+				<div class="feature-inner"><img src="<?php bloginfo( 'template_url' ); ?>/images/home.jpg" alt=""></div>
+				<div class="feature-info">
+					<p>Welcome Text (Slogan/Description)</p>
+				</div>
+			</aside>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<nav class="nav-tabs">
+			<ul>
+				<li><a href="template-content.html">Page</a></li>
+				<li><a href="template-content.html">Page</a></li>
+				<li><a href="template-content.html">Page</a></li>
+			</ul>
+		</nav>
+
+		<section class="content">
+			
+			<div class="grid-group clearfix">
+
+				<div class="grid-item grid-2 leftcol">
+					
+					<!-- HERE WE BEGIN OUR CONTENT LOOP -->
+					<!-- THE LOOP -->
+		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+					
+					<blockquote>
+						<p><a href="<?php the_permalink(); ?>"></a></p>
+					</blockquote>
+					
+					<h2><?php the_date(); ?> by <?php the_author(); ?></h2>
+					
+					<?php the_content(); ?>
+					
+				<?php endwhile; else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				<?php endif; ?>
+       
+	<!-- END THE LOOP -->
+	
+				</div> <!-- end left column container -->
+
+				<div class="grid-item rightcol">
+					<?php get_sidebar(  ); ?>
+				</div><!-- /grid-item rightcol -->
+				
+			</div><!-- end column container-->
+
+			</section> <!-- end content section -->
+	</div><!-- END WRAPPER -->
+
+<!-- MAIN TEMPLATE AREA ENDS HERE -->
+
+<!-- FOOTER INCLUDE BEGINS HERE -->
+<?php get_footer(  ); ?>
+
+
+
+<!-- FOOTER INCLUDE ENDS HERE
+
+WHEW! YOU MADE IT! -->

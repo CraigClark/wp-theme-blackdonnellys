@@ -1,0 +1,316 @@
+/* column control */
+
+/* column prefixes
+	mobile-portrait--column-  mobile-landscape--column- tablet-portrait--column-  desktop--column- widescreen--column-
+	
+	
+	*/
+.row {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+.row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+/* handles behavior, e.g. floating and base column properties */
+.column {
+	float: left;
+	margin-left: 1.6%;
+	/* margin-bottom: 2em;*/
+	
+}
+
+/* remove margin from first column to equal 100% of total width */
+.column:first-child {margin-left: 0;} 
+
+/*whole*/
+
+
+
+
+/* responsive element scaling */
+img.scale, 
+iframe.scale, 
+object.scale {
+	height: auto;
+	max-width: 100%;
+}
+
+
+.column-one-whole {width: 100%; margin-left: 0;}
+
+
+.column-one-half {width: 49.2%; margin-left: 1.6%;}
+.column-two-halves {width:100%;}
+
+
+
+.column-one-third {width: 32.26%;}
+.column-two-thirds {width: 66.13%;}
+.column-two-thirds {width: 100%;}
+
+
+
+.column-one-quarter {width: 23.8%;}
+.column-two-quarters {width: 49.2%;}
+.column-three-quarters {width: 74.6%;}
+.column-four-quarters {width: 100%;}
+
+
+.column-one-sixth {width: 15.332%;}
+.column-two-sixths {width: 32.26%;}
+.column-three-sixths {width: 49.2%;}
+.column-four-sixths {width: 66.13%;}
+.column-five-sixths {width: 83.06%;}
+.column-six-sixths {width: 100%;}
+
+
+.column-one-tweflth {width: 6.866%;}
+.column-two-twelfths {width: 15.332%;}
+.column-three-twelfths {width: 23.8%;}
+.column-four-twelfths {width: 32.26%;}
+.column-five-twelfths {width: 40.73%;}
+.column-six-twelfths {width: 49.2%;}
+.column-seven-twelfths {width: 57.66%;}
+.column-eight-twelfths {width: 66.13%;}
+.column-nine-twelfths {width: 74.6%;}
+.column-ten-twelfths {width: 83.06%;}
+.column-eleven-twelfths {width: 91.53%;}
+.column-twelve-twelfths {width: 100%;}
+
+
+@media only screen and (max-width: 30em) { /* Portrait phones and down */
+
+
+.mobile-portrait--column-one-whole {width: 100%; margin-left: 0;}
+
+/*halves*/
+.mobile-portrait--column-one-half {width: 49.2%; margin-left: 1.6%; margin-left: 1.6%;}
+.mobile-portrait--column-two-halves {width:100%; margin-left: 0;}
+
+
+/*thirds*/
+.mobile-portrait--column-one-third {width: 32.26%; margin-left: 1.6%;}
+.mobile-portrait--column-two-thirds {width: 66.13%; margin-left: 1.6%;}
+.mobile-portrait--column-three-thirds {width: 100%; margin-left: 0;}
+
+
+/*quarters*/
+.mobile-portrait--column-one-quarter {width: 23.8%; margin-left: 1.6%;}
+.mobile-portrait--column-two-quarters {width: 49.2%; margin-left: 1.6%;}
+.mobile-portrait--column-three-quarters {width: 74.6%; margin-left: 1.6%;}
+.mobile-portrait--column-four-quarters {width: 100%; margin-left: 0;}
+
+/* sixths */
+.mobile-portrait--column-one-sixth {width: 15.332%; margin-left: 1.6%;}
+.mobile-portrait--column-two-sixths {width: 32.26%; margin-left: 1.6%;}
+.mobile-portrait--column-three-sixths {width: 49.2%; margin-left: 1.6%;}
+.mobile-portrait--column-four-sixths {width: 66.13%; margin-left: 1.6%;}
+.mobile-portrait--column-five-sixths {width: 83.06%; margin-left: 1.6%;}
+.mobile-portrait--column-six-sixths {width: 100%; margin-left: 0;}
+
+/* twelfths */
+.mobile-portrait--column-one-tweflth {width: 6.866%; margin-left: 1.6%;}
+.mobile-portrait--column-two-twelfths {width: 15.332%; margin-left: 1.6%;}
+.mobile-portrait--column-three-twelfths {width: 23.8%; margin-left: 1.6%;}
+.mobile-portrait--column-four-twelfths {width: 32.26%; margin-left: 1.6%;}
+.mobile-portrait--column-five-twelfths {width: 40.73%; margin-left: 1.6%;}
+.mobile-portrait--column-six-twelfths {width: 49.2%; margin-left: 1.6%;}
+.mobile-portrait--column-seven-twelfths {width: 57.66%; margin-left: 1.6%;}
+.mobile-portrait--column-eight-twelfths {width: 66.13%; margin-left: 1.6%;}
+.mobile-portrait--column-nine-twelfths {width: 74.6%; margin-left: 1.6%;}
+.mobile-portrait--column-ten-twelfths {width: 83.06%; margin-left: 1.6%;}
+.mobile-portrait--column-eleven-twelfths {width: 91.53%; margin-left: 1.6%;}
+.mobile-portrait--column-twelve-twelfths {width: 100%; margin-left: 0;}
+}
+
+
+
+
+@media only screen and (min-width: 30em) { /*Landscape phone to portrait tablet*/
+
+.mobile-landscape--column-one-whole {width: 100%; margin-left: 0;}
+
+/*halves*/
+.mobile-landscape--column-one-half {width: 49.2%; margin-left: 1.6%; margin-left: 1.6%;}
+.mobile-landscape--column-two-halves {width:100%; margin-left: 0;}
+
+
+/*thirds*/
+.mobile-landscape--column-one-third {width: 32.26%; margin-left: 1.6%;}
+.mobile-landscape--column-two-thirds {width: 66.13%; margin-left: 1.6%;}
+.mobile-landscape--column-three-thirds {width: 100%; margin-left: 0;}
+
+
+/*quarters*/
+.mobile-landscape--column-one-quarter {width: 23.8%; margin-left: 1.6%;}
+.mobile-landscape--column-two-quarters {width: 49.2%; margin-left: 1.6%;}
+.mobile-landscape--column-three-quarters {width: 74.6%; margin-left: 1.6%;}
+.mobile-landscape--column-four-quarters {width: 100%; margin-left: 0;}
+
+/* sixths */
+.mobile-landscape--column-one-sixth {width: 15.332%; margin-left: 1.6%;}
+.mobile-landscape--column-two-sixths {width: 32.26%; margin-left: 1.6%;}
+.mobile-landscape--column-three-sixths {width: 49.2%; margin-left: 1.6%;}
+.mobile-landscape--column-four-sixths {width: 66.13%; margin-left: 1.6%;}
+.mobile-landscape--column-five-sixths {width: 83.06%; margin-left: 1.6%;}
+.mobile-landscape--column-six-sixths {width: 100%; margin-left: 0;}
+
+/* twelfths */
+.mobile-landscape--column-one-tweflth {width: 6.866%; margin-left: 1.6%;}
+.mobile-landscape--column-two-twelfths {width: 15.332%; margin-left: 1.6%;}
+.mobile-landscape--column-three-twelfths {width: 23.8%; margin-left: 1.6%;}
+.mobile-landscape--column-four-twelfths {width: 32.26%; margin-left: 1.6%;}
+.mobile-landscape--column-five-twelfths {width: 40.73%; margin-left: 1.6%;}
+.mobile-landscape--column-six-twelfths {width: 49.2%; margin-left: 1.6%;}
+.mobile-landscape--column-seven-twelfths {width: 57.66%; margin-left: 1.6%;}
+.mobile-landscape--column-eight-twelfths {width: 66.13%; margin-left: 1.6%;}
+.mobile-landscape--column-nine-twelfths {width: 74.6%; margin-left: 1.6%;}
+.mobile-landscape--column-ten-twelfths {width: 83.06%; margin-left: 1.6%;}
+.mobile-landscape--column-eleven-twelfths {width: 91.53%; margin-left: 1.6%;}
+.mobile-landscape--column-twelve-twelfths {width: 100%; margin-left: 0;}
+}
+
+@media only screen and (min-width: 48em) { /* Portrait tablet to landscape narrow desktop*/
+
+.tablet-portrait--column-one-whole {width: 100%; margin-left: 0;}
+
+/*halves*/
+.tablet-portrait--column-one-half {width: 49.2%; margin-left: 1.6%;}
+.tablet-portrait--column-two-halves {width:100%; margin-left: 0;}
+
+
+/*thirds*/
+.tablet-portrait--column-one-third {width: 32.26%; margin-left: 1.6%;}
+.tablet-portrait--column-two-thirds {width: 66.13%; margin-left: 1.6%;}
+.tablet-portrait--column-three-thirds {width: 100%; margin-left: 0;}
+
+
+/*quarters*/
+.tablet-portrait--column-one-quarter {width: 23.8%; margin-left: 1.6%;}
+.tablet-portrait--column-two-quarters {width: 49.2%; margin-left: 1.6%;}
+.tablet-portrait--column-three-quarters {width: 74.6%; margin-left: 1.6%;}
+.tablet-portrait--column-four-quarters {width: 100%; margin-left: 0;}
+
+/* sixths */
+.tablet-portrait--column-one-sixth {width: 15.332%; margin-left: 1.6%;}
+.tablet-portrait--column-two-sixths {width: 32.26%; margin-left: 1.6%;}
+.tablet-portrait--column-three-sixths {width: 49.2%; margin-left: 1.6%;}
+.tablet-portrait--column-four-sixths {width: 66.13%; margin-left: 1.6%;}
+.tablet-portrait--column-five-sixths {width: 83.06%; margin-left: 1.6%;}
+.tablet-portrait--column-six-sixths {width: 100%; margin-left: 0;}
+
+/* twelfths */
+.tablet-portrait--column-one-tweflth {width: 6.866%; margin-left: 1.6%;}
+.tablet-portrait--column-two-twelfths {width: 15.332%; margin-left: 1.6%;}
+.tablet-portrait--column-three-twelfths {width: 23.8%; margin-left: 1.6%;}
+.tablet-portrait--column-four-twelfths {width: 32.26%; margin-left: 1.6%;}
+.tablet-portrait--column-five-twelfths {width: 40.73%; margin-left: 1.6%;}
+.tablet-portrait--column-six-twelfths {width: 49.2%; margin-left: 1.6%;}
+.tablet-portrait--column-seven-twelfths {width: 57.66%; margin-left: 1.6%;}
+.tablet-portrait--column-eight-twelfths {width: 66.13%; margin-left: 1.6%;}
+.tablet-portrait--column-nine-twelfths {width: 74.6%; margin-left: 1.6%;}
+.tablet-portrait--column-ten-twelfths {width: 83.06%; margin-left: 1.6%;}
+.tablet-portrait--column-eleven-twelfths {width: 91.53%; margin-left: 1.6%;}
+.tablet-portrait--column-twelve-twelfths {width: 100%; margin-left: 0;}
+}
+
+
+@media only screen and (min-width: 60em) { /* Standard Desktop */
+.desktop--column-one-whole {width: 100%; margin-left: 0;}
+
+/*halves*/
+.desktop--column-one-half {width: 49.2%; margin-left: 1.6%;}
+.desktop--column-two-halves {width:100%; margin-left: 0;}
+
+
+/*thirds*/
+.desktop--column-one-third {width: 32.26%; margin-left: 1.6%;}
+.desktop--column-two-thirds {width: 66.13%; margin-left: 1.6%;}
+.desktop--column-three-thirds {width: 100%; margin-left: 0;}
+
+
+/*quarters*/
+.desktop--column-one-quarter {width: 23.8%; margin-left: 1.6%;}
+.desktop--column-two-quarters {width: 49.2%; margin-left: 1.6%;}
+.desktop--column-three-quarters {width: 74.6%; margin-left: 1.6%;}
+.desktop--column-four-quarters {width: 100%; margin-left: 0;}
+
+/* sixths */
+.desktop--column-one-sixth {width: 15.332%; margin-left: 1.6%;}
+.desktop--column-two-sixths {width: 32.26%; margin-left: 1.6%;}
+.desktop--column-three-sixths {width: 49.2%; margin-left: 1.6%;}
+.desktop--column-four-sixths {width: 66.13%; margin-left: 1.6%;}
+.desktop--column-five-sixths {width: 83.06%; margin-left: 1.6%;}
+.desktop--column-six-sixths {width: 100%; margin-left: 0;}
+
+/* twelfths */
+.desktop--column-one-tweflth {width: 6.866%; margin-left: 1.6%;}
+.desktop--column-two-twelfths {width: 15.332%; margin-left: 1.6%;}
+.desktop--column-three-twelfths {width: 23.8%; margin-left: 1.6%;}
+.desktop--column-four-twelfths {width: 32.26%; margin-left: 1.6%;}
+.desktop--column-five-twelfths {width: 40.73%; margin-left: 1.6%;}
+.desktop--column-six-twelfths {width: 49.2%; margin-left: 1.6%;}
+.desktop--column-seven-twelfths {width: 57.66%; margin-left: 1.6%;}
+.desktop--column-eight-twelfths {width: 66.13%; margin-left: 1.6%;}
+.desktop--column-nine-twelfths {width: 74.6%; margin-left: 1.6%;}
+.desktop--column-ten-twelfths {width: 83.06%; margin-left: 1.6%;}
+.desktop--column-eleven-twelfths {width: 91.53%; margin-left: 1.6%;}
+.desktop--column-twelve-twelfths {width: 100%; margin-left: 0;}
+
+}
+
+
+@media only screen and (min-width: 72.5em) { /* Widescreen Desktop*/
+
+.widescreen--column-one-whole {width: 100%; margin-left: 0;}
+
+/*halves*/
+.widescreen--column-one-half {width: 49.2%; margin-left: 1.6%;}
+.widescreen--column-two-halves {width:100%; margin-left: 0;}
+
+
+/*thirds*/
+.widescreen--column-one-third {width: 32.26%; margin-left: 1.6%;}
+.widescreen--column-two-thirds {width: 66.13%; margin-left: 1.6%;}
+.widescreen--column-three-thirds {width: 100%; margin-left: 0;}
+
+
+/*quarters*/
+.widescreen--column-one-quarter {width: 23.8%; margin-left: 1.6%;}
+.widescreen--column-two-quarters {width: 49.2%; margin-left: 1.6%;}
+.widescreen--column-three-quarters {width: 74.6%; margin-left: 1.6%;}
+.widescreen--column-four-quarters {width: 100%; margin-left: 0;}
+
+/* sixths */
+.widescreen--column-one-sixth {width: 15.332%; margin-left: 1.6%;}
+.widescreen--column-two-sixths {width: 32.26%; margin-left: 1.6%;}
+.widescreen--column-three-sixths {width: 49.2%; margin-left: 1.6%;}
+.widescreen--column-four-sixths {width: 66.13%; margin-left: 1.6%;}
+.widescreen--column-five-sixths {width: 83.06%; margin-left: 1.6%;}
+.widescreen--column-six-sixths {width: 100%; margin-left: 0;}
+
+/* twelfths */
+.widescreen--column-one-tweflth {width: 6.866%; margin-left: 1.6%;}
+.widescreen--column-two-twelfths {width: 15.332%; margin-left: 1.6%;}
+.widescreen--column-three-twelfths {width: 23.8%; margin-left: 1.6%;}
+.widescreen--column-four-twelfths {width: 32.26%; margin-left: 1.6%;}
+.widescreen--column-five-twelfths {width: 40.73%; margin-left: 1.6%;}
+.widescreen--column-six-twelfths {width: 49.2%; margin-left: 1.6%;}
+.widescreen--column-seven-twelfths {width: 57.66%; margin-left: 1.6%;}
+.widescreen--column-eight-twelfths {width: 66.13%; margin-left: 1.6%;}
+.widescreen--column-nine-twelfths {width: 74.6%; margin-left: 1.6%;}
+.widescreen--column-ten-twelfths {width: 83.06%; margin-left: 1.6%;}
+.widescreen--column-eleven-twelfths {width: 91.53%; margin-left: 1.6%;}
+.widescreen--column-twelve-twelfths {width: 100%; margin-left: 0;}
+}
+
+*/

@@ -1,0 +1,39 @@
+<!-- GET HEADER.PHP -->
+<?php get_header(); ?>
+    
+  <section class="clearfix">
+	<div>
+		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+			<div class="post">
+				<h6>Posted <?php the_date(); ?> by <?php the_author(); ?></h6>
+        			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+         
+            <div class="entry">
+				<!-- THE ACTUAL CONTENT OF THE POST -->
+				<?php the_content(); ?>
+				<?php the_post_thumbnail(); ?>
+				
+				<!-- POST METADATA 
+				<h6 class="postmetadata">
+					Filed under <?php the_category(', ') ?> by <?php  the_author(); ?><br>
+                	<?php edit_post_link('Edit', ' &#124; ', ''); ?>
+                </h6>-->
+				
+		 		
+ 	
+            </div><!-- END ENTRY-->
+        </div><!-- END POST -->
+		<hr>
+		<?php endwhile; else: ?>
+    		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
+       
+	<!-- END THE LOOP -->		
+          
+  </div><!-- END CONTENT -->
+  
+  <?php //get_sidebar(); ?>
+  
+  </section>
+<!-- GET FOOTER -->  
+<?php get_footer(); ?>

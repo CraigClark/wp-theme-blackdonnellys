@@ -1,0 +1,607 @@
+/* fonts
+	
+	font-family: 'Alegreya', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Architects Daughter', cursive;
+	
+	colors:
+	BLUE GREY: rgba(44, 67, 55, 1); 
+	DARK PURPLE: rgba(83, 6, 43, 1);
+	RICH BLACK: rgba(6, 7, 14, 1);
+	GOLD: rgba(201, 110, 1, 1);
+	PAPER: rgba(250, 240, 230, 1);
+	
+	*/
+body {
+	font-family:'Open Sans',sans-serif;
+	font-size:16px;
+	background-color:rgba(250,240,230,1);
+/*set the value of an em */
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Alegreya',serif;
+	color:rgba(83,6,43,1);
+}
+
+strong {
+	font-weight:700;
+}
+
+h1 {
+	font-size:2em;
+	margin-bottom:.25em;
+}
+
+h1.page-title {
+	font-size:3em;
+	margin:1.5rem 0 1rem;
+}
+
+h2 {
+	margin-top:1.75rem;
+}
+
+p {
+	font-size:1.1em;
+	line-height:1.5em;
+	margin-bottom:1.5em;
+}
+
+p a {
+	font-weight:700;
+}
+
+a,a:link,a:visited {
+	text-decoration:none;
+	color:rgba(65,179,61,1);
+}
+
+a:hover,a:active,a:focus {
+	text-decoration:underline;
+}
+
+header {
+	background-color:rgba(243,233,210,1);
+	background-image:url(images/top-banner-small.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	background-size:cover;
+	overflow:auto;
+}
+
+.branding {
+	padding:1em;
+}
+
+.branding img {
+	max-height:3em;
+}
+
+.branding .logo {
+	max-width:25%;
+}
+
+.branding .wordmark {
+	max-width:70%;
+	padding-left:5%;
+	padding-top:.5em;
+}
+
+.tagline {
+	font-size:1.25em;
+	margin:1em auto 1.5em;
+	text-align:center;
+	font-family:'Architects Daughter',cursive;
+}
+
+.tagline h1 {
+	font-family:'Architects Daughter',cursive;
+}
+
+.pencil {
+	position:absolute;
+	z-index:100;
+	width:40px;
+	margin:50px 0 0 10px;
+	transition:all 1s ease;
+}
+
+#blog-articles h1 {
+	margin-top:1em;
+}
+
+#blog-articles ul li a,#blog-articles ul li a:link,#blog-articles ul li a:visited {
+	display:block;
+	padding:10px 0;
+}
+
+.readmore {
+	font-style:italic;
+	text-indent:5px;
+}
+
+.contactinfo {
+	color:#fff;
+	height:3.5em;
+	line-height:3.5em;
+	white-space:nowrap;
+}
+
+.email {
+	text-align:center;
+}
+
+.wrapper {
+/* this overrides some of the settings in grid.css*/
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+}
+
+.adjustforpencil {
+	padding-left:40px;
+}
+
+.visuallyhidden {
+	position:absolute;
+	overflow:hidden;
+	clip:rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+
+.blog #blog-articles ul {
+	margin-bottom:2em;
+}
+
+.social-links {
+}
+
+.social-links a img {
+	max-height:45px;
+	padding-left:3.2%;
+	float:right;
+	padding-top:10px;
+}
+
+/*****************************
+*     RESPONSIVE NAVIGATION 
+
+*     change apearance as needed
+*     these are the visual styles, positioing is done in
+*     responsive-navigation.css
+********************************/
+nav {
+	clear:both;
+}
+
+nav ul {
+	background-color:rgba(83,6,43,1);
+	color:#fff;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+}
+
+nav ul li a,nav ul li a:link,nav ul li a:visited {
+	text-decoration:none;
+	padding:20px;
+	color:#fff;
+}
+
+nav ul li a:hover {
+	background-color:rgba(201,110,1,1);
+	transition:background-color .5s ease;
+}
+
+nav ul li a .fa {
+	font-size:2em;
+	text-align:center;
+}
+
+.fontawesome-text {
+	display:block;
+}
+
+.handle {
+/* this is the div that contains the menu button
+	it's hidden on fullscreen */
+	background:#000;
+	color:#fff;
+/* reset as needed */
+	padding:15px;
+/* reset as needed */
+}
+
+.handle .inner {
+/* reset as needed */
+	width:40%;
+	margin:0 auto;
+	padding:15px 10px;
+	border:1px solid #fff;
+	border-radius:10px;
+	text-align:center;
+}
+
+
+.postid-191 .stickynote article ul {
+	list-style: outside;
+	padding: 1em 2em;
+}
+
+.postid-191 .stickynote article ul li {
+	margin-bottom: 1em;
+	line-height: 24px;
+}
+
+/* REmove comment for responsive menu 
+	make sure this media query matches the one in responsive-navigation.css 
+	
+	@media screen and (max-width: 30em) { 
+	
+	.showing {
+		max-height: 20em;
+	}
+	
+	nav ul li {
+		text-align: left;
+	}
+	
+	nav ul li a {
+		padding: 15px;
+	}
+ 
+}/* /RESPONSIVE NAVIGATION */
+/* style the footer */
+footer {
+	background-color:rgba(83,6,43,1);
+	color:#fff;
+	overflow:auto;
+	margin-top:2em;
+}
+
+footer a,footer a:link,footer a:visited {
+	color:#fff;
+}
+
+footer a:hover,footer a:focus,footer a:active {
+	color:#fff;
+}
+
+/*/footer*/
+.devblock {
+	color:red;
+	font-size:2em;
+}
+
+.row .stacked {
+	margin-bottom:1.6%;
+}
+
+.craig_popup_open,.helene_popup_open,.kowesa_popup_open,.thiscoudbeyou_popup_open {
+	border:1px solid #000;
+	cursor:pointer;
+	border-radius:5%;
+	overflow:hidden;
+}
+
+.stickynote {
+	background-color:#fff;
+	border:1px solid #fafafa;
+	padding:15px;
+	box-shadow:2px 2px 3px rgba(6,7,14,.2);
+	transition:transform 1s ease;
+	overflow: auto;
+}
+
+.craig_popup_open:hover,.helene_popup_open:hover,.kowesa_popup_open:hover,.thiscoudbeyou_popup_open:hover,.craig_popup_open:focus,.helene_popup_open:focus,.kowesa_popup_open:focus,.thiscoudbeyou_popup_open:focus {
+	margin:7px;
+	border-radius:5%;
+	overflow:hidden;
+	transition:margin .4s;
+}
+
+.craig_popup_close,.helene_popup_close,.kowesa_popup_close,.thiscoudbeyou_popup_close {
+	cursor:pointer;
+	display:block;
+	color:#fff;
+	font-size:2em;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+.popup_wrapper,.popup_background {
+	transition:all .4s;
+}
+
+.popup_content {
+	width:80%;
+	margin:0 auto;
+	max-width:400px;
+	background-color:#fff;
+	position:relative;
+	border-radius:15px;
+	overflow:hidden;
+}
+
+.popup_content h2 {
+	padding:.75em .75em 0;
+}
+
+.popup_content p {
+	padding:.75em;
+}
+
+#work-websites,#work-design,#work-art {
+	display:block;
+	transition:all .4s ease;
+}
+
+#work-websites p,#work-design p,#work-art p {
+	display:block;
+	margin:0 1.6% 1.6% 0;
+}
+
+.gridsystem-article .stickynote:nth-child(*) {
+	transition:all .4s ease;
+}
+
+.code {
+	font-family:"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	font-size:.87rem;
+	margin:1rem;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 2em 2em;
+}
+
+.authorinfo {
+	margin-bottom:1.5em;
+}
+
+/** sgv style **/
+.svg1 .st0 {
+	fill:#123b5b;
+}
+
+.svg1 .st1 {
+	fill:#ad8e1d;
+}
+
+.svg2 .st0 {
+	fill:#ff0;
+	transition:all 3s ease;
+}
+
+.svg2 .st0:hover {
+	fill:blue;
+}
+
+.svg2 .st1 {
+	fill:green;
+	transition:all 3s ease;
+}
+
+.svg2 .st1:hover {
+	fill:red;
+	cursor:hand;
+}
+
+.svgtext {
+	font-family:cursive;
+	font-size:300px;
+}
+
+.svg2 .svgtext {
+	font-family:sans-serif;
+	font-size:100px;
+	transition:all 3s ease;
+
+}
+
+.svg2 .svgtext:hover {
+	font-size:600px;
+}
+
+/********************************
+
+media queries
+
+*********************************/
+@media only screen and (max-width: 30em) {
+	/* 320px Portrait phones and down */
+	.devblock:before {
+		content:'Phone Portrait';
+	}
+	
+	.email {
+		text-align:left;
+	}
+	
+	.social-links {
+		padding-bottom:1em;
+	}
+	
+	.social-links a img {
+		float:left;
+		padding-left:0;
+		padding-right:3.2%;
+	}
+}
+
+@media only screen and (min-width: 30em) {
+	/* 480px Landscape phone to portrait tablet*/
+	.devblock:before {
+		content:'Phone Landscape';
+	}
+	
+	.branding img {
+		max-height:4em;
+	}
+	
+	#work-websites img,#work-design img,#work-art img {
+	}
+	
+	.branding .wordmark {
+		max-width:70%;
+		padding-left:0;
+		padding-top:0;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+	/* 768px Tablet Portrait tablet to desktop*/
+	.devblock:before {
+		content:'Tablet Portrait';
+	}
+	
+	.fontawesome-text {
+		display:inline;
+		padding-left:.5em;
+	}
+	
+	.social-links {
+	}
+	
+	header {
+		background-image:url(images/top-banner-large.jpg);
+	}
+	
+	.branding {
+		height:125px;
+	}
+	
+	.branding img {
+		max-height:5em;
+	}
+	
+	.branding .logo {
+	}
+	
+	.branding .wordmark {
+		max-width:50%;
+		padding-left:3%;
+		padding-top:0;
+	}
+	
+	#work-websites {
+		transform:rotate(-3deg);
+		transition:transform 1s ease;
+	}
+	
+	#work-design {
+		transform:rotate(2deg);
+		transition:transform 1s ease;
+	}
+	
+	#work-art {
+		transform:rotate(-1deg);
+		transition:transform 1s ease;
+	}
+	
+	#who-we-are .stickynote {
+		transform:rotate(7deg);
+	}
+	
+	#about-us .stickynote {
+		transform:rotate(-3deg);
+	}
+	
+	#sidebar .stickynote {
+		transform:rotate(1deg);
+	}
+	
+	#widgetized-area .stickynote {
+		transform:rotate(-1deg);
+	}
+
+	
+	#blog-articles .stickynote {
+		transform:rotate(2deg);
+	}
+	
+	.gridsystem-article .stickynote:nth-child(1) {
+		transform:rotate(.5deg);
+		transition:all .4s ease;
+	}
+	
+	.gridsystem-article .stickynote:nth-child(2) {
+		transform:rotate(-.8deg);
+		transition:all .4s ease;
+	}
+	
+	.gridsystem-article .stickynote:nth-child(3) {
+		transform:rotate(.3deg);
+		transition:all .4s ease;
+	}
+	
+	.gridsystem-article .stickynote:nth-child(4) {
+		transform:rotate(-.2deg);
+		transition:all .4s ease;
+	}
+	
+	.stickynote {
+		transition:transform 1s ease;
+	}
+}
+
+@media only screen and (min-width: 60em) {
+	/* 960px Standard Desktop */
+	.devblock:before {
+		content:'Desktop Standard';
+	}
+	
+	#work-websites img,#work-design img,#work-art img {
+	}
+}
+
+@media only screen and (min-width: 72.5em) {
+	/* 1160px Widescreen Desktop*/
+	.devblock:before {
+		content:'Desktop Widescreen';
+	}
+	
+	.adjustforpencil {
+		padding-left:0;
+	}
+	
+	.pencil {
+		margin:50px 0 0 50px;
+		transform:rotate(2deg);
+		transition:all 1s ease;
+	}
+}
+
+/*********************************************
+*
+*
+*	Media queries below deal with fiddley bits
+*
+*
+**********************************************/
+@media only screen and (max-width: 1024px) {
+	/* 11024px just used to show a bit of whitespace on the side of site is les than the wrapper max with*/
+	.contentarea {
+		width:90%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+@media only screen and (max-height: 300px) {
+	/*fixes issues where some absolute positioned elements collide with navigation on small heights*/
+	
+}
+
+@media only screen and (min-width: 1260px) {
+	.pencil {
+		transform:rotate(11deg);
+		transition:all 1s ease;
+	}
+}
