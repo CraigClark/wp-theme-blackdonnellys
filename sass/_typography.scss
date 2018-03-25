@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter:400,700|Raleway:300,400,700");
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500|Rock+Salt|Special+Elite');
+//font-family: 'Rock Salt', cursive;
+//font-family: 'Shadows Into Light', cursive;
+//font-family: 'Raleway', sans-serif;
 
 $baseFontsize: $rem * 0.9;
-$bodyFont: "Raleway", sans-serif;
-$headingFont: "Bitter", serif;
+$bodyFont: 'Special Elite', serif;
+$headingFont: "Rock Salt", sans-serif;
 
 //from _variables.scss, sets mobilfirst font
 $mediumFontsize: $baseFontsize * 1.1;
@@ -20,7 +23,7 @@ $h4: $h3 * $headingDecrease;
 $h5: $h4 * $headingDecrease;
 $h6: $h5 * $headingDecrease;
 
-html {
+html,body {
   font-family: $bodyFont;
   font-size: $baseFontsize;
 }

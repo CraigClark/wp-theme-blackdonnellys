@@ -8,7 +8,7 @@ $thumb: 50px;
 //widths for media queries
 $medium: 35rem;
 $large: 68rem;
-$maxSiteWidth: 100rem;
+$maxSiteWidth: 1280px;
 $minSiteWidth: 22rem;
 
 //colors
@@ -25,16 +25,17 @@ $ColorBorder: mix(white, $ColorBackground, 70%);
 
 	*/
 $ColorBackground: #fff;//#15303d;
-$ColorHeadings: mix(black, $ColorBackground, 60%);
+$ColorHeadings: mix(black, $ColorBackground, 80%);
 $ColorText: mix(black, $ColorBackground, 80%);
 $ColorLighter: mix(black, $ColorBackground, 30%);
 $ColorDarker: mix(black, $ColorBackground, 60%);
 $ColorBorder: mix(black, $ColorBackground, 10%);
 
-$ColorMenuBackground: $ColorDarker;
+$ColorMenuBackground: #000;
 
 $ColorAlert: #761C19;
 
 $ColorTransparentOverlayDark: rgba($ColorDarker, 0.75);
 $ColorInlineLink: #1861a5;
 $ColorInlineLinkHover: mix(white, $ColorInlineLink, 40%);
+$logo-text: #8e0000;

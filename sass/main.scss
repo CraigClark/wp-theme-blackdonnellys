@@ -17,6 +17,9 @@ html {
   box-sizing: inherit;
 }
 
+.wrapper {
+@include wrapper;
+}
 
 body {
   margin: 0;
@@ -86,14 +89,17 @@ header {
 
 /*-- NAVIGATION - -*/
 nav {
-  margin-top: 1em;
+  //margin-top: 1em;
+  background-color: $ColorMenuBackground;
+  border-top: 2px #000 solid;
+  border-bottom: 2px #000 solid;
 
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    @include wrapper;
     @include clearfix;
 
     li {
@@ -106,6 +112,7 @@ nav {
         color: mix(white, $ColorMenuBackground, 70%);
         height: $thumb;
         line-height: $thumb;
+        padding: 2rem auto;
         text-decoration: none;
         text-align: center;
 
@@ -200,25 +207,22 @@ button {
 }
 
 
-.wrapper {
-  max-width: $maxSiteWidth;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.top-decoration {
-background-color: $ColorLighter;
-padding-bottom: 1em;
+.top-banner{
+background-color: white;
+background-image: url('../images/checkerboard.svg');
+background-repeat: no-repeat;
+background-position: left center;
+background-color: #606060;
+background-size: cover;
+padding: 3em 0;
 	
 }
 .branding {
   margin: 0 auto 1rem;
   padding: 1rem 0;
   text-align: center;
-  background-color: $ColorBackground;
+  background-color: #000;
   background-image: url(../images/transparent-texture.png);
-  border-top: 2px $ColorDarker solid;
-  border-bottom: 2px $ColorDarker solid;
   
   img {
 	  display: block;
@@ -227,17 +231,17 @@ padding-bottom: 1em;
 
   blockquote {
     p {
-      color: $ColorDarker;
+      color: white;
       font-weight: 700;
-      font-size: 1.15rem;
-      line-height: 1.6rem;
+      font-size: 2rem;
+      line-height: 2rem;
     }
   }
 }
 
 .full-width {
   // use for things that go 100% the width of the site
-  background-color: $ColorDarker;
+  background-color: #000;
   margin: 0;
   padding: 0;
   overflow: auto;
@@ -329,6 +333,33 @@ footer {
 	@include clearfix;
 }
 
+.inline-photo-wrapper {
+  padding: 2em;
+  background-image: url('../images/background-spiral.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 1em 0;
+  
+}
 
+.inline-photo {
+  img {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: yellow;
+    border: 10px solid #000;
+  }
+  
+}
+
+.bd-outline {
+  fill: #fff;
+}
+.bd-fill {
+  fill: $logo-text;
+}
 
 @import "queries";

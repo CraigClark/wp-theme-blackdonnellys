@@ -91,6 +91,7 @@
 
     ul {
       flex-direction: row;
+      margin-bottom: 0;
 
       li {
         width: calc(25% - 5px);
@@ -98,8 +99,8 @@
 
         a {
           font-size: $baseFontsize * 1.618;
-          height: 2rem;
-          line-height: 2rem;
+          //height: 2rem;
+          //line-height: 2rem;
           text-align: center;
         }
       }

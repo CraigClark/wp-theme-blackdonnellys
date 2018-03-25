@@ -51,3 +51,10 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@mixin wrapper {
+    max-width: $maxSiteWidth;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+

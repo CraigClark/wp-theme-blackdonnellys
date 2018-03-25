@@ -43,10 +43,30 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
-//change length of wors for excerpt
+//change length of words for excerpt
 
 function custom_excerpt_length( $length ) {
 	return 100;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+//add wrapper around images in body
+function breezer_addDivToImage( $content ) {
+
+   // A regular expression of what to look for.
+   $pattern = '/(<img([^>]*)>)/i';
+   // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
+   $replacement = '<div class="inline-photo-wrapper"><div class="inline-photo">$1</div></div>';
+
+   // run preg_replace() on the $content
+   $content = preg_replace( $pattern, $replacement, $content );
+
+   // return the processed content
+   return $content;
+}
+
+add_filter( 'the_content', 'breezer_addDivToImage' );
+
 ?>
+
+
