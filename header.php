@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta property="og:type"   content="website">
 	<meta property="og:title"  content="<?php bloginfo('name'); ?>">
-	<meta property="og:image"  content="<?php bloginfo( 'template_url' ); ?>/images/i-love-inuktut-stop-bill-37-site-banner.jpg">
+	<meta property="og:image"  content="<?php bloginfo( 'template_url' ); ?>/images/black-donnellys-site-banner.jpg">
 	<meta property="og:description" content="<?php bloginfo('description'); ?>">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
